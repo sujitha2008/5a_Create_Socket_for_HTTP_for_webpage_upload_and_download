@@ -71,6 +71,17 @@ elif choice == "2":
     print("Server Response:\n", response)
 client_socket.close()
 ```
+## index.html:
+```
+<html>
+<head>
+    <title>Simple HTTP Server</title>
+</head>
+<body>
+    <h1>Hello from Python Socket Server!</h1>
+</body>
+</html>
+```
 ## OUTPUT
 ## SERVER
 ![alt text](server.png)
