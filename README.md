@@ -18,6 +18,7 @@ To write a PYTHON program for socket for HTTP for web page upload and download
 
 ## Program 
 ## server.py:
+```
 import socket
 HOST = '127.0.0.1'  
 PORT = 8080    
@@ -44,7 +45,9 @@ while True:
         response = "HTTP/1.1 200 OK\n\nFile Uploaded Successfully"
         client_socket.send(response.encode())
     client_socket.close()
+```
 ## client.py:
+```
 import socket
 HOST = '127.0.0.1'
 PORT = 8080
@@ -67,7 +70,7 @@ elif choice == "2":
     response = client_socket.recv(4096).decode()
     print("Server Response:\n", response)
 client_socket.close()
-
+```
 ## OUTPUT
 ## SERVER
 ![alt text](server.png)
